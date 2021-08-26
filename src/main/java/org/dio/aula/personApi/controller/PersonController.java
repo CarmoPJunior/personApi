@@ -3,6 +3,7 @@ package org.dio.aula.personApi.controller;
 
 import org.dio.aula.personApi.dto.request.PersonDTO;
 import org.dio.aula.personApi.dto.response.MessageResponseDTO;
+import org.dio.aula.personApi.exception.PersonNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.dio.aula.personApi.service.PersonService;
