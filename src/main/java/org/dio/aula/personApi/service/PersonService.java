@@ -3,17 +3,18 @@ package org.dio.aula.personApi.service;
 import org.dio.aula.personApi.dto.request.PersonDTO;
 import org.dio.aula.personApi.dto.response.MessageResponseDTO;
 import org.dio.aula.personApi.exception.PersonNotFoundException;
+import org.dio.aula.personApi.mapper.PersonMapper;
 import org.dio.aula.personApi.model.Person;
 import org.dio.aula.personApi.repository.PersonRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 public class PersonService {
 
+    @Autowired
     private PersonRepository personRepository;
 
     private final PersonMapper personMapper = PersonMapper.INSTANCE;
