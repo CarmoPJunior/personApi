@@ -1,6 +1,8 @@
 package org.dio.aula.personApi.controller;
 
 
+import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
 import org.dio.aula.personApi.dto.request.PersonDTO;
 import org.dio.aula.personApi.dto.response.MessageResponseDTO;
 import org.dio.aula.personApi.exception.PersonNotFoundException;
@@ -16,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -25,6 +26,7 @@ public class PersonController {
 
     @Autowired
     private PersonService personService;
+
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)

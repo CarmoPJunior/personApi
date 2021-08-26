@@ -1,5 +1,6 @@
 package org.dio.aula.personApi.service;
 
+import lombok.AllArgsConstructor;
 import org.dio.aula.personApi.dto.request.PersonDTO;
 import org.dio.aula.personApi.dto.response.MessageResponseDTO;
 import org.dio.aula.personApi.exception.PersonNotFoundException;

@@ -1,5 +1,7 @@
 package org.dio.aula.personApi.dto.request;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -7,8 +9,6 @@ import lombok.NoArgsConstructor;
 import org.dio.aula.personApi.enums.PhoneType;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
 
 @Data
 @Builder
